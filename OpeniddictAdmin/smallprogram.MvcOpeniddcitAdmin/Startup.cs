@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +28,11 @@ namespace smallprogram.MvcOpeniddcitAdmin
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+                {
+                    options.LoginPath = "/account/login";
+                });
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -55,14 +61,17 @@ namespace smallprogram.MvcOpeniddcitAdmin
                 // Register the OpenIddict server components.
                 .AddServer(options =>
                 {
-                    // Enable the token endpoint.
-                    options.SetTokenEndpointUris("/connect/token");
-
-
                     // Enable the client credentials flow.
                     options.AllowClientCredentialsFlow();
-                    //options.AllowAuthorizationCodeFlow();
+
                     //options.AllowImplicitFlow();
+                    options.AllowAuthorizationCodeFlow().RequireProofKeyForCodeExchange();
+
+                    // Enable the token endpoint.
+                    options.SetTokenEndpointUris("/connect/token");
+                    options.SetAuthorizationEndpointUris("/connect/authorize");
+
+
 
                     // Register the signing and encryption credentials.
                     options.AddDevelopmentEncryptionCertificate()
@@ -71,7 +80,8 @@ namespace smallprogram.MvcOpeniddcitAdmin
 
                     // Register the ASP.NET Core host and configure the ASP.NET Core options.
                     options.UseAspNetCore()
-                          .EnableTokenEndpointPassthrough();
+                          .EnableTokenEndpointPassthrough()
+                          .EnableAuthorizationEndpointPassthrough();
                 })
 
                 // Register the OpenIddict validation components.
