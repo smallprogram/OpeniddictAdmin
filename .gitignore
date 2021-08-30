@@ -3,3 +3,5 @@
 ################################################################################
 
 /OpeniddictAdmin/smallprogram.Api/obj
+/OpeniddictAdmin/smallprogram.BlazorServerIdpAdmin/obj
+/OpeniddictAdmin/smallprogram.BlazorWASMClientNoHost/obj
