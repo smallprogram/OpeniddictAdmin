@@ -7,3 +7,6 @@
 /OpeniddictAdmin/smallprogram.BlazorWASMClientNoHost/obj
 /OpeniddictAdmin/smallprogram.MvcOpeniddcitAdmin/obj
 /OpeniddictAdmin/smallprogram.MvcOpeniddcitAdmin/bin/Debug/net5.0
+/OpeniddictAdmin/smallprogram.Api/bin/Debug/net5.0
+/OpeniddictAdmin/smallprogram.BlazorWASMClientNoHost/bin/Debug/net5.0
+/OpeniddictAdmin/.vs
