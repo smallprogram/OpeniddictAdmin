@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smallprogram.Api", "smallpr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smallprogram.BlazorWASMClientNoHost", "smallprogram.BlazorWASMClientNoHost\smallprogram.BlazorWASMClientNoHost.csproj", "{F137A6CD-D82F-4728-81A4-70E8D8FF23C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smallprogram.BlazorServerIdpAdmin", "smallprogram.BlazorServerIdpAdmin\smallprogram.BlazorServerIdpAdmin.csproj", "{DB2F23F2-DD67-4871-B12A-90900F812EDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smallprogram.MvcOpeniddcitAdmin", "smallprogram.MvcOpeniddcitAdmin\smallprogram.MvcOpeniddcitAdmin.csproj", "{E61D4893-4977-42C1-9ED6-E18B05BC64E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{F137A6CD-D82F-4728-81A4-70E8D8FF23C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F137A6CD-D82F-4728-81A4-70E8D8FF23C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F137A6CD-D82F-4728-81A4-70E8D8FF23C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB2F23F2-DD67-4871-B12A-90900F812EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB2F23F2-DD67-4871-B12A-90900F812EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB2F23F2-DD67-4871-B12A-90900F812EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB2F23F2-DD67-4871-B12A-90900F812EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E61D4893-4977-42C1-9ED6-E18B05BC64E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E61D4893-4977-42C1-9ED6-E18B05BC64E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E61D4893-4977-42C1-9ED6-E18B05BC64E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E61D4893-4977-42C1-9ED6-E18B05BC64E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,7 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0B7895AD-F5B0-4FE5-9298-8783FD3A3D6E} = {259F3489-9332-4109-8570-5CC5DAE1D365}
 		{F137A6CD-D82F-4728-81A4-70E8D8FF23C6} = {84409B8F-7933-4F49-A306-03BC4AB877AC}
-		{DB2F23F2-DD67-4871-B12A-90900F812EDB} = {F1406B49-5026-4E23-BD51-8CFF22D0DBD5}
+		{E61D4893-4977-42C1-9ED6-E18B05BC64E8} = {F1406B49-5026-4E23-BD51-8CFF22D0DBD5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55592C49-89C4-473A-822A-20675E54D44D}
